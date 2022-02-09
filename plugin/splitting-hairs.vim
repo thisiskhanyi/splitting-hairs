@@ -4,7 +4,7 @@ function! s:SplitHairs()
     let cnt = len(arr)
     let i = 0
     while i < (cnt - 1)
-        execute "normal! f,a\<CR>\<ESC>"
+        execute "normal! 0f,a\<CR>\<ESC>"
         let i += 1
     endwhile
 
