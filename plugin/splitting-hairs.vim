@@ -1,4 +1,4 @@
-function! SplitHairs() 
+function! s:SplitHairs() 
     let line = getline(".")
     let arr = split(line, ",")
     let cnt = len(arr)
@@ -14,4 +14,4 @@ function! SplitHairs()
 
 endfunction
 
-command! Split call SplitHairs()
+command! Split call s:SplitHairs()
